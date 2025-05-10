@@ -3,9 +3,9 @@ body {
     background: #f5f5f5;
     margin: 0;
     padding: 0;
-  }
-  
-  .card {
+}
+
+.card {
     max-width: 800px;
     background: white;
     margin: 40px auto;
@@ -13,74 +13,109 @@ body {
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-  }
-  
-  .avatar {
+}
+
+.avatar {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     margin-bottom: 20px;
     object-fit: cover;
     object-position: center;
-  }
-  
-  h1 {
+}
+
+h1 {
     margin: 10px 0;
     font-size: 2em;
     color: #333;
-  }
-  
-  h3 {
+}
+
+h3 {
     font-weight: normal;
     color: #666;
-  }
-  
-  p {
+}
+
+p {
     color: #444;
     line-height: 1.6;
-  }
-  
-  .contact {
+}
+
+.contact {
     margin-top: 20px;
     font-size: 0.95em;
-  }
-  
-  .contact a {
+}
+
+.contact a {
     text-decoration: none;
     color: #0073e6;
-  }
-  
-  .interests {
+}
+
+.interests {
     margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-  }
-  
-  .interest-card {
-    background: #fafafa;
+}
+
+.interest-card {
     padding: 15px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     text-align: left;
-  }
-  
-  .interest-card img {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.interest-card img {
     width: 100%;
     height: 160px;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 10px;
-  }
-  
-  .interest-card h4 {
+}
+
+.interest-card h4 {
     margin: 0 0 8px;
     color: #333;
-  }
-  
-  .interest-card p {
+}
+
+.interest-card p {
     margin: 0;
     font-size: 0.95em;
     color: #555;
-  }
-  
+}
+
+.interest-card:hover {
+    transform: scale(1.05);
+}
+
+.card-animal {
+    background: #e6f7ff;
+}
+
+.card-travel {
+    background: #fff4e6;
+}
+
+.card-movies {
+    background: #f4e6ff;
+}
+
+.card-languages {
+    background: #e6ffcc;
+}
+
+.card-animal h4 {
+    color: #007bff;
+}
+
+.card-travel h4 {
+    color: #ff9800;
+}
+
+.card-movies h4 {
+    color: #9c27b0;
+}
+
+.card-languages h4 {
+    color: #4caf50;
+}
