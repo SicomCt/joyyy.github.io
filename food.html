@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>And....I love cooking!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #ffeef5;
+    }
+
+    h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-top: 20px;
+    font-family: 'Fredoka', sans-serif;
+    }
+
+    .gallery-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    }
+
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 强制三列 */
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    }
+
+    .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    aspect-ratio: 4 / 3;
+    }
+
+    .gallery img:hover {
+    transform: scale(1.02);
+    }
+
+    .back-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    }
+
+    .back-button a {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.4);
+    transition: background-color 0.3s;
+    }
+
+    .back-button a:hover {
+    background-color: #ff85c1;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>And...I love food!🍡 </h1>
+
+  <div class="gallery">
+    <img src="avocabeef.jpg" alt="beef1" />
+    <img src="beeftartar.jpg" alt="beef2" />
+    <img src="brunchcake.jpg" alt="brunch" />
+    <img src="eggs.jpg" alt="egg" />
+    <img src="salmon.jpg" alt="salmon" />
+    <img src="carrotbeef.jpg" alt="beef3" />
+  </div>
+
+  <div class="back-button">
+    <a href="index.html"> Back</a>
+  </div>
+</body>
+</html>
